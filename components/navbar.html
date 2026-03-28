@@ -1,0 +1,73 @@
+<!--
+    ItsDPR LAB - Navbar Component
+    Componente de navegación reutilizable
+
+    Uso:
+    1. Incluir este archivo HTML en tu página
+    2. Asegúrate de tener los estilos en css/styles.css
+    3. El JavaScript para funcionalidad está en js/main.js
+
+    El navbar es responsive e incluye:
+    - Logo con gradiente
+    - Menú de navegación
+    - Botón toggle para móvil
+    - Efecto blur (glassmorphism)
+    - Transición al hacer scroll
+-->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-text">ItsDPR</span>
+            <span class="logo-sub">LAB</span>
+        </a>
+
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link" data-page="index">Home</a></li>
+            <li><a href="explorer.html" class="nav-link" data-page="explorer">Proyectos</a></li>
+            <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+        </ul>
+
+        <button class="nav-toggle" aria-label="Toggle menu">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!--
+    Para usar este componente de forma standalone:
+
+    Opción 1 - Include directo (si tu servidor lo soporta):
+    #include virtual="components/navbar.html" -->
+
+    Opción 2 - Fetch con JavaScript:
+    <div id="navbar-container"></div>
+    <script>
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar-container').innerHTML = html;
+                // Inicializar funcionalidad
+                setupNavbar();
+            });
+
+        function setupNavbar() {
+            // Set active link
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Mobile toggle
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            navToggle?.addEventListener('click', () => {
+                navMenu?.classList.toggle('active');
+            });
+        }
+    </script>
+
+    Opción 3 - Copiar y pegar el HTML directamente en tu página
+-->

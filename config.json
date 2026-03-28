@@ -1,0 +1,86 @@
+{
+  "_description": "Configuración centralizada de temas, colores, efectos y estilos para toda la página ItsDPR LAB",
+  
+  "colors": {
+    "_section": "Define todos los esquemas de color utilizados en la página",
+    "bg": {
+      "_info": "Colores de fondo principal - Afecta el fondo general de la página",
+      "primary": "#0a0a0f",
+      "secondary": "#0f0f1a"
+    },
+    "surface": {
+      "_info": "Colores de superficies (tarjetas, paneles) - Afecta elementos como las tarjetas de proyectos y cards",
+      "default": "#151525",
+      "hover": "#1a1a30"
+    },
+    "neon": {
+      "_info": "Colores neón principales - Afecta botones, gradientes, efectos de brillo y elementos interactivos",
+      "primary": "#8b5cf6",
+      "primary-light": "#a78bfa",
+      "primary-dark": "#6d28d9",
+      "secondary": "#06b6d4",
+      "secondary-light": "#22d3ee",
+      "accent": "#f472b6",
+      "accent-light": "#f9a8d4"
+    },
+    "text": {
+      "_info": "Colores de texto - Afecta legibilidad y contraste del contenido",
+      "primary": "#ffffff",
+      "secondary": "#94a3b8",
+      "muted": "#64748b"
+    },
+    "status": {
+      "_info": "Colores de estado (éxito, advertencia, error) - Afecta mensajes y validaciones",
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "danger": "#ef4444",
+      "info": "#3b82f6"
+    }
+  },
+  
+  "gradients": {
+    "_info": "Gradientes lineales - Afecta botones, títulos, fondos y efectos de color",
+    "primary": "linear-gradient(135deg, #8b5cf6, #06b6d4)",
+    "secondary": "linear-gradient(135deg, #6d28d9, #8b5cf6)",
+    "text": "linear-gradient(135deg, #a78bfa, #22d3ee)",
+    "glow": "linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(6, 182, 212, 0.3))"
+  },
+  
+  "borders": {
+    "_info": "Bordes redondeados - Afecta esquinas de botones, tarjetas y elementos",
+    "radius": "8px",
+    "radius-lg": "12px",
+    "radius-xl": "16px",
+    "radius-full": "9999px"
+  },
+  
+  "shadows": {
+    "_info": "Sombras y resplandores - Afecta profundidad y efecto de brillo de elementos",
+    "default": "0 4px 6px rgba(0, 0, 0, 0.3)",
+    "lg": "0 10px 25px rgba(0, 0, 0, 0.4)",
+    "glow": "0 0 30px rgba(139, 92, 246, 0.3)",
+    "glow-lg": "0 0 50px rgba(139, 92, 246, 0.4)"
+  },
+  
+  "transitions": {
+    "_info": "Velocidad de animaciones - Afecta suavidad y rapidez de transiciones",
+    "default": "all 0.3s ease",
+    "slow": "all 0.5s ease"
+  },
+  
+  "effects": {
+    "_info": "Efectos visuales especiales - Afecta luminosidad, saturación y resplandor",
+    "blur": "15px",
+    "blur-low": "5px",
+    "brightness": 1.1,
+    "saturation": 1.2,
+    "glow-alpha": 0.1,
+    "glow-alpha-secondary": 0.3
+  },
+  
+  "spacing": {
+    "_info": "Espaciado y dimensiones globales - Afecta ancho máximo y padding de secciones",
+    "container-max": "1400px",
+    "section-padding": "100px 0"
+  }
+}
