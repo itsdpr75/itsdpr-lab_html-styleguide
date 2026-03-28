@@ -1,5 +1,4 @@
 # ItsDPR LAB - Style Guide
-Styleguide generado por Qwen Code, Qwen se ha encargado solo de extraer el estilo de mi pagina web y crear un styleguide a partir de el mientras yo seguia desarroyando mi pagina.
 
 Documentación completa del sistema de diseño de ItsDPR LAB. Este style guide contiene todos los componentes, estilos y patrones necesarios para mantener la consistencia visual en todos los proyectos.
 
@@ -406,11 +405,7 @@ Referencia este style guide al crear nuevas páginas o componentes.
 
 ## 📝 Licencia
 
-Este style guide es parte del proyecto ItsDPR LAB. 
-
-Licencia AGPL 3.0 - Cualquier modificacion que hagas o fork debe ser de codigo abierto con la misma licencia. No puedes revender este contenido.
-
-Se permite ganar dinero con programas o servicios que usen este styleguide, el unico requisito es dejar en alguna parte el enlace al repositorio original
+Este style guide es parte del proyecto ItsDPR LAB. Todos los derechos reservados.
 
 ---
 
